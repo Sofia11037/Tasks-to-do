@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks to do</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="title">Tasks to do</h1>
+
+        <form action="" class="tasks">
+            <input type="text" class="tasks__input-name" placeholder="Task">
+            <input type="number" min="1" class="tasks__input-number" placeholder="Task number">
+
+            <div class="tasks__about">
+                <select class="tasks__select-priority">
+                <option value="new">New</option>
+                <option value="critical">Critical</option>
+                <option value="passed">Passed</option>
+             </select>
+                <select class="tasks__select-status">
+              <option value="start">Start</option>
+              <option value="progress">Progress</option>
+              <option value="done">Done</option>
+           </select>
+            </div>
+            <button class="btn">add</button>
+
+
+        </form>
+
+        <div class="list">
+
+            <h2>Start</h2>
+            <div class="start"></div>
+
+            <h2>Process</h2>
+            <div class="progress"></div>
+
+            <h2>Done</h2>
+            <div class="done"></div>
+        </div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
